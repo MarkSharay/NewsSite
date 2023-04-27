@@ -1,0 +1,10 @@
+<div class="modal-header">
+    <h5 class="modal-title text-center">{{_new.name}}</h5>
+    <button type="button" class="close" aria-label="Close" (click)="dialogRef.close('Cross click')">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div mat-dialog-content>
+    <img class="main-image" [src]="this.getImage(this._new.picture)">
+    <p>{{_new.text}}</p>
+</div>

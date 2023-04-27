@@ -1,0 +1,18 @@
+<h1>Govno</h1>
+<div class="row">
+    <div class="col col1" [style.background-image]="createUrl(sortList[0].picture)" (click)="open(sortList[0])">
+        <h2>{{sortList[0].name}}</h2>
+        <h4>{{sortList[0].date}}</h4>
+    </div>
+    <div class="col">
+        <div class="row" [style.background-image]="createUrl(sortList[1].picture)" (click)="open(sortList[1])">
+            <h2>{{sortList[1].name}}</h2>
+            <h4>{{sortList[1].date}}</h4>
+        </div>
+        <div class="row" [style.background-image]="createUrl(sortList[2].picture)" (click)="open(sortList[2])">
+            <h2>{{sortList[2].name}}</h2>
+            <h4>{{sortList[2].date}}</h4>
+        </div>
+    </div>
+
+</div>

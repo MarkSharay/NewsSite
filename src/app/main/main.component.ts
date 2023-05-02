@@ -15,9 +15,8 @@ export class MainComponent {
   public sortList: New[] = [];
   constructor(public dataService: DataService, public router: Router, public dialog: MatDialog){
     dataService.getAll().subscribe(data =>{
-      this.newsList = data;
-      this.sortList = this.newsList.sort((a, b) =>
-      a.date.getTime() - b.date.getTime());
+      this.sortList = data;
+      console.log(this.newsList);
     })
 
   }
@@ -32,4 +31,7 @@ createUrl(path: string){
       data: news
     })
   }
+  openAll(){
+    this.router.navigate(['/list'])
+}
 }

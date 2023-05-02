@@ -6,7 +6,8 @@ import { ListComponent } from './list/list.component';
 const routes: Routes = [
   {path:'mainpage', component: MainComponent},
   {path:'newspage', component:NewspageComponent},
-  {path:'list', component:ListComponent}
+  {path:'list', component:ListComponent},
+  {path:'', redirectTo:'mainpage',pathMatch:'full'}
 
 ];
 

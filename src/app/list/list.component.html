@@ -1,1 +1,12 @@
-<p>list works!</p>
+<div>
+    <ul class="col content" >
+        <li class="row" *ngFor="let _new of newsList" (click)="open(_new)">
+            <div class="image col" [style.background-image]="createUrl(_new.picture)">
+            </div>
+            <div class="col">
+                <h2>{{_new.name}}</h2>
+                <h4>{{_new.date}}</h4>
+            </div>
+        </li>
+    </ul>
+</div>

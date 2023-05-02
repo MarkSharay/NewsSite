@@ -1,10 +1,21 @@
 .col1{
-    width: 60%;
+    width: 70%;
+}
+.col{
+    width: 30%;
 }
 *{
     color: white;
+    margin: 0px;
+    padding: 0px;
 }
-
+.content{
+    height: 100%;
+    width: 100%;
+}
+.row1{
+    height: 50%;
+}
 div{
-    margin: 10px;
+    background-size:cover
 }

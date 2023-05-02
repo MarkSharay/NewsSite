@@ -9,6 +9,7 @@ import { MaterialModule } from './material.module';
 import { DataService } from './services/data.service';
 import { NewspageComponent } from './newspage/newspage.component';
 import { ListComponent } from './list/list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ListComponent } from './list/list.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
